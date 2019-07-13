@@ -1,9 +1,41 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>
-      Tab Two
+      Login
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size-md="6" offset-md="3">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>
+              login
+            </ion-card-title>
+            <ion-avatar>
+              <img src="https://freeicons.io/laravel/public/uploads/icons/png/4812105831555930560-128.png">
+            </ion-avatar>
+          </ion-card-header>
+
+
+          <ion-item>
+            <ion-label>
+              User Name:
+            </ion-label>
+            <ion-input type="text"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label>
+              Password:
+            </ion-label>
+            <ion-input type="Password"></ion-input>
+          </ion-item>
+          <ion-button>Sign In</ion-button>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
