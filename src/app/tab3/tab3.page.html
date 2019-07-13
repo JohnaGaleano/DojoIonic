@@ -6,4 +6,23 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content></ion-content>
+<ion-content>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size-md="6" offset-md="3">
+        <ion-card>
+         <ion-card-header>
+           Camera
+         </ion-card-header>
+         <ion-button (click)="capturarFoto()"> Tke a picture</ion-button>
+         <ion-button (click)="buscarFoto()"> Find Picture</ion-button>
+<ion-card-content>
+  <img [src]="foto" *ngIf="foto">
+</ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
